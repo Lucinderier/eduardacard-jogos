@@ -1,0 +1,46 @@
+/* App.css */
+
+/* Fundo do site */
+body {
+  background-color: #fbe9e7; /* Rosa claro */
+  background-image: radial-gradient(circle at 10% 20%, rgba(255, 49, 94, 0.348), rgba(255, 182, 193, 0) 30%),
+                    radial-gradient(circle at 80% 80%, rgba(255, 119, 155, 0.626), rgba(255, 192, 203, 0) 30%),
+                    repeating-linear-gradient(45deg, rgba(215, 16, 46, 0.361), rgba(255, 182, 193, 0.1) 20px, rgba(255, 182, 193, 0.05) 20px, rgba(255, 182, 193, 0.05) 40px);
+  background-size: cover, cover, 100% 100%;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo básico do card */
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #c5cbff;
+  border: none;
+  border-radius: 15px;
+  padding: 30px;
+  width: 300px;
+  margin: 50px auto;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.imagem img {
+  width: 100%; /* Ajusta a imagem para preencher o card */
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.card h3 {
+  color: #f53b5a;
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.card p {
+  color: #501b7c;
+  font-size: 18px;
+  margin-top: 0;
+  text-align: center;
+}

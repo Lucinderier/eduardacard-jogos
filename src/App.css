@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+/* Navbar.css */
+.navbar {
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #ddd;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Estilo do contêiner dos cards */
+.card-container {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os cards */
+  justify-content: center; /* Alinha os cards no centro do contêiner */
+  flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
+  padding: 20px; /* Adiciona um pouco de espaçamento ao redor dos cards */
+}
+
+/* Estilo dos cards */
+.card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px; /* Largura fixa para cada card */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de hover para os cards */
+.card:hover {
+  transform: scale(1.1) rotate(5deg); /* Aumenta o tamanho e rota levemente */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Animação do logo */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
